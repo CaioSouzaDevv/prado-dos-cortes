@@ -1,3 +1,4 @@
+import { ServicesComponent } from './features/home/components/services/services.component';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './core/header/header.component';
@@ -7,7 +8,7 @@ import { CounterComponent } from './features/home/components/counter/counter.com
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, BannerComponent, CounterComponent],
+  imports: [RouterOutlet, HeaderComponent, BannerComponent, CounterComponent, ServicesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

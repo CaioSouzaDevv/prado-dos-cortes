@@ -1,0 +1,43 @@
+@use '../../../../../styles/style-base' as *;
+
+.services {
+
+&__card-body {
+    background-color: #1a1a1a;
+}
+&__card-title {
+    color: $color-secondary;
+}
+  &__card-image-wrapper {  // novo container para a imagem
+    position: relative;
+    max-height: 300px;
+    overflow: hidden; // mantém a imagem dentro do container
+  }
+
+  &__card-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+
+  &__card-image-wrapper::after { // overlay aplicado no wrapper
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; // altura do escurecimento
+    background: linear-gradient( rgba(0.2,0.2,0.2,0.2), rgba(2, 2, 2, 0.9));
+    pointer-events: none;
+  }
+    
+    @media only screen and (max-width:576px) {
+        &__card-image {
+            width: 100%;
+        }
+    }
+} 
+article { 
+    margin:10px 0px;
+}

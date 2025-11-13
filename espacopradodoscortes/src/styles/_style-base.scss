@@ -2,11 +2,8 @@
    🌐 RESET GLOBAL
 ================================== */
 
-*,
-*::before,
-*::after {
+* {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -17,7 +14,7 @@ $color-primary: #0a0a0a;
 $color-secondary: #d4af37;
 $white: #fff;
 $grey: #1a1a1a;
-
+$yellow: yellow;
 /* ================================
    📦 CONTAINERS
 ================================== */
@@ -32,15 +29,27 @@ h1, h2, h3, h4, h5, p, span {
   margin: 0 auto;
   padding: 0 10px;
   clear: both;
+  box-sizing: border-box;
 }
 .container {
   padding: 25px 0;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 .primary-color {
     color: $color-primary
 }
 .secondary-color {
     color: $color-secondary
+}
+.yellow {
+    color: yellow;
+}
+.hr--line {
+    width: 10%;
+    border: 2px solid $color-secondary;
+    margin: 25px auto;
+    opacity: inherit;
 }
 /* ================================
    🔘 BOTÕES
@@ -310,7 +319,9 @@ h1, h2, h3, h4, h5, p, span {
         font-size: calc(4.28em - 0.28vw - 0.28vh);
     }
 }
-
+.gap-10 {
+    gap: 10px;
+}
 .gap-20 {
     gap: 20px;
 }
@@ -322,4 +333,6 @@ h1, h2, h3, h4, h5, p, span {
 .gap-40 {
     gap: 40px;
 }
-
+.row {
+    box-sizing: border-box;
+}
