@@ -1,0 +1,36 @@
+@use '../../../../../styles/style-base' as *;
+
+.counter {
+  background-color: $grey;
+  color: $color-secondary;
+  padding: 3.5rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  &__list {
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    flex: 1;
+    min-width: 180px;
+  }
+
+  &__icon {
+    font-size: 3rem;
+    color: $color-secondary;
+    margin-bottom: 1rem;
+  }
+
+  &__number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: $color-secondary;
+  }
+
+  &__text {
+    font-size: 1rem;
+    color: $color-secondary
+  }
+}
