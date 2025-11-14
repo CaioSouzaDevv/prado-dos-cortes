@@ -1,0 +1,28 @@
+@use '../../../../../styles/style-base' as *;
+
+.testimontial {
+    &__card {
+    background-color: $color-primary;
+    padding: 25px;
+    border-radius: 10px;
+    border:1px solid $color-secondary;
+}
+    &__card-image {
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        object-fit: cover;
+        border: 2px solid $color-secondary;
+
+    }
+
+
+    &__card-name {
+        margin-bottom: 0;
+    }
+    &__card-stars {
+        color: $color-secondary;
+    }
+
+
+}
