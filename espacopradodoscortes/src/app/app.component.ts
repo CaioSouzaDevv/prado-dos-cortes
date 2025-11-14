@@ -7,11 +7,12 @@ import { CounterComponent } from './features/home/components/counter/counter.com
 import { TestimonialsComponent } from './features/home/components/testimonials/testimonials.component';
 import { HistoryComponent } from './features/home/components/history/history.component';
 import { ContactComponent } from './features/home/components/contact/contact.component';
+import { FooterComponent } from './core/footer/footer.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, BannerComponent, CounterComponent, ServicesComponent, TestimonialsComponent, HistoryComponent, ContactComponent],
+  imports: [RouterOutlet, HeaderComponent, BannerComponent, CounterComponent, ServicesComponent, TestimonialsComponent, HistoryComponent, ContactComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
