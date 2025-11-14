@@ -5,11 +5,12 @@ import { HeaderComponent } from './core/header/header.component';
 import { BannerComponent } from './features/home/banner/banner.component';
 import { CounterComponent } from './features/home/components/counter/counter.component';
 import { TestimonialsComponent } from './features/home/components/testimonials/testimonials.component';
+import { HistoryComponent } from './features/home/components/history/history.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, BannerComponent, CounterComponent, ServicesComponent, TestimonialsComponent],
+  imports: [RouterOutlet, HeaderComponent, BannerComponent, CounterComponent, ServicesComponent, TestimonialsComponent, HistoryComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
