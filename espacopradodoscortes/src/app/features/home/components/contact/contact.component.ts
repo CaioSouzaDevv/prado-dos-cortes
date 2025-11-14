@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SITE_INFO } from '../../../../core/config/site-info';
 
 @Component({
   selector: 'app-contact',
@@ -8,5 +9,6 @@ import { Component } from '@angular/core';
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
+    general_information = SITE_INFO;
 
 }

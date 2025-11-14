@@ -1,0 +1,26 @@
+@use '../../../../../styles/style-base' as *;
+
+.contact {
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $color-primary;
+        padding: 25px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        border: 1px solid $color-secondary;
+        margin: 40px 0;
+        min-height: 300px;
+    }
+    &__card h2, p {
+        margin: 0;
+    }
+
+    &__card svg{
+       color: $color-secondary;
+       margin: 0;
+       
+    }
+    
+}
