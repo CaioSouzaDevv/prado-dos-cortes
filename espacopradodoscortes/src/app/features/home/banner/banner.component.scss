@@ -1,3 +1,17 @@
 .banner {
-   min-height: 550px;
+   &__content {
+       min-height: 550px;
+   }
+
+   @media only screen and (max-width:576px) {
+      &__title {
+         text-align: center;
+      }
+      &__sub-title {
+
+      }
+      &__description {
+         text-align: center;
+      }
+   }
 }
