@@ -19,15 +19,21 @@
                     </figure>
                 </a>
 
-                <nav class="header__nav" aria-label="Menu principal">
-                    
+                <i class="fa-solid fa-bars fa-solid header__icon" (click)="toggleMenu()" aria-label="Abrir menu"
+                    role="button" tabindex="0"></i>
+                <nav class="header__nav" aria-label="Menu principal" [class.open]="isMenuOpen">
+
                     <ul class="header__menu list-unstyled d-flex gap-3 mb-0">
-<i class="fa-solid fa-scissors header__icon"></i>
-                     <li class="header__menu-item"><a href="#home" class="header__menu-link" title="Ir para a página inicial">Home</a></li>
-                        <li class="header__menu-item"><a href="#services" class="header__menu-link" title="Veja nossos serviços">Serviços</a></li>
-                        <li class="header__menu-item"><a href="#testimontial" class="header__menu-link" title="Leia depoimentos de clientes">Depoimentos</a></li>
-                        <li class="header__menu-item"><a href="#history" class="header__menu-link" title="Conheça nossa história">História</a></li>
-                        <li class="header__menu-item"><a href="#contact" class="header__menu-link" title="Entre em contato conosco">Contato</a></li>
+                        <li class="header__menu-item"><a href="#home" class="header__menu-link"
+                                title="Ir para a página inicial">Home</a></li>
+                        <li class="header__menu-item"><a href="#services" class="header__menu-link"
+                                title="Veja nossos serviços">Serviços</a></li>
+                        <li class="header__menu-item"><a href="#testimontial" class="header__menu-link"
+                                title="Leia depoimentos de clientes">Depoimentos</a></li>
+                        <li class="header__menu-item"><a href="#history" class="header__menu-link"
+                                title="Conheça nossa história">História</a></li>
+                        <li class="header__menu-item"><a href="#contact" class="header__menu-link"
+                                title="Entre em contato conosco">Contato</a></li>
                         <li class="header__menu-item">
                             <a href="#agendar" class="btn btn--secondary" title="Agendar um horário">Agendar</a>
                         </li>

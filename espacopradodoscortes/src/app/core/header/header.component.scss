@@ -1,24 +1,48 @@
 @use '../../../styles/style-base' as *;
 
 .header {
-& a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-}
-@media only screen and (max-width:576px) {
+    & a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+    }
 
-&__menu {
-    flex-direction: column;
-}
-&__icon {
-   
- color: $color-secondary;
-  font-size: 26px;
+    &__icon {
+        display: none;
+    }
+
+    @media only screen and (max-width:576px) {
+
+        &__menu {
+            flex-direction: column;
+            position: relative;
+        }
+
+        &__nav {
+            display: none;
+        }
+
+        &__icon {
+            display: block;
+            color: #fff;
+            font-size: 26px;
+            cursor: pointer;
 
 
-}
-}
+        }
+
+
+        &__nav {
+            display: none;
+
+            &.open {
+                display: block;
+                position: absolute;
+                top: 70px;
+                right: 17px;
+            }
+        }
+    }
 
 
 }
